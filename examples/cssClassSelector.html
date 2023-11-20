@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selectorCombination</title>
+  <style>
+    /*Combining selectors::
+    Element with class selector (selector.class)
+    child(direct) selector (selector > selector)
+    Decendant selector (selector selector)*/
+
+    /* all with class="highlight"*/
+    .highlight{
+      background-color: yellow;
+    }
+    /* all p elements with class="highlight"*/
+    p.highlight{
+      font-style: italic;
+    }
+    /*all elements with class 'highlight' as well as 'mainpoint'*/
+    .highlight.mainPoint{
+      color: orange;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="highlight">Element with Class Selector</h1>
+  <p>People are stupid. If I don't do this, there will be no peace. Eventually, time will pass and the pain will heal. Eventually, checkmate's power will weaken and people will begin fighting again. This time, they will use the weapon themselves and once more know true pain. And for the short time, peace will come again. It will give birth to short period of peace within this endless chain of hatred. That's my wish.</p>
+  <p class="highlight">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque consequatur adipisci consectetur iste pariatur nobis, cum exercitationem recusandae officia assumenda unde? Veritatis quaerat dolorum porro odit repellat recusandae omnis doloribus!</p>
+  <div class="mainPoint highlight">
+    Hero? No! We're pirates! I love heroes, but I don't wanna be one! Do you know what heroes are? Say there is a chunk of meat. Pirates will have a banquet and eat it, but heroes will share it with other people. I want all the meat!"
+  </div>
+</body>
+</html>
