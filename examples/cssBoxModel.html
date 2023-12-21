@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box model</title>
+  <style>
+    * { /* the universal selector '*' is used for resetting browser default styling*/
+      box-sizing: border-box; /*border-box is best practice for maitaining the actual size stipuated for your content*/
+
+      /* to remove the default browser paddings, uncomment here and comment padding & margin in 'body' rule::*/
+      /*margin: 0px;
+      padding: 0px;  */
+    }
+    body  {
+      margin: 0px;
+      padding: 0px;
+      background-color: chocolate;
+    }
+    #box  {
+      padding: 10px 10px 10px 10px;
+      background-color: rgb(26, 158, 114);
+      border: 10px double #010101;
+     /* margin: 40px;*/
+      width: 300px;
+      margin-top: 40px;
+    }
+    #content  {
+      background-color: #09ef09;
+      color: ghostwhite;
+      
+    }
+    /*horizontal margins are cumulative while vertical margins mostly collapses into the larger value
+    -content overflow can be remedied using the 'overflow' property*/
+    h1  {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Box Model</h1>
+  <div id="box">
+    <div id="content">Chaos is a ladder!!</div>
+  </div>
+</body>
+</html>

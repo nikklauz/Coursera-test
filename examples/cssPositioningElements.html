@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positioning element</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    h1  {
+      margin-bottom: 15px;
+    }
+    div#container {
+      background-color: #eeee11;
+      position: relative;
+      top: 70px;
+    }
+    p {
+      height: 50px;
+      width: 50px;
+      border: 1px solid black;
+      margin-bottom: 15px;
+    }
+    #p1 {
+      background-color: #05bc2c;
+      position: relative;
+      top: 65px;
+      left: 75px;
+    }
+    #p2 {
+      background-color: #ff6ce9;
+    }
+    #p3 {
+      background-color: #18f0ff;
+      clear: left;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+    }
+    #p4 {
+      background-color: #ff000f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Positioning Elements::Relative & Absolute positioning</h1>
+  <div id="container">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+  </div>
+</body>
+</html>
